@@ -1,0 +1,7 @@
+C:\Users\atsia\Desktop\TestSwaggerProjekt\obj\Debug\net9.0\TestSwaggerProjekt.csproj.AssemblyReference.cache
+C:\Users\atsia\Desktop\TestSwaggerProjekt\obj\Debug\net9.0\TestSwaggerProjekt.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\atsia\Desktop\TestSwaggerProjekt\obj\Debug\net9.0\TestSwaggerProjekt.AssemblyInfoInputs.cache
+C:\Users\atsia\Desktop\TestSwaggerProjekt\obj\Debug\net9.0\TestSwaggerProjekt.AssemblyInfo.cs
+C:\Users\atsia\Desktop\TestSwaggerProjekt\obj\Debug\net9.0\TestSwaggerProjekt.csproj.CoreCompileInputs.cache
+C:\Users\atsia\Desktop\TestSwaggerProjekt\obj\Debug\net9.0\TestSwaggerProjekt.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\atsia\Desktop\TestSwaggerProjekt\obj\Debug\net9.0\TestSwaggerProjekt.MvcApplicationPartsAssemblyInfo.cache
