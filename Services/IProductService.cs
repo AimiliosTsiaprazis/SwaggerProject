@@ -4,6 +4,6 @@ using System.Collections.Generic;
 
 public interface IProductService
 {
+    Task AddAsync(Product product);
     List<Product> GetProducts();
-    void Add(Product product);
 }

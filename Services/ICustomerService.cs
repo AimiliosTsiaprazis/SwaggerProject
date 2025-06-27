@@ -4,6 +4,6 @@ using System.Collections.Generic;
 
 public interface ICustomerService
 {
+    Task AddAsync(Customer customer);
     List<Customer> GetCustomers();
-    void Add(Customer customer);
 }
