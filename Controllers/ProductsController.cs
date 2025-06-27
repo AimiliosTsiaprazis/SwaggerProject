@@ -18,9 +18,9 @@ namespace SwaggerProject.Controllers
             return _productService.GetProducts();
         }
         [HttpPost]
-        public IActionResult Add(Product product)
+        public async Task<IActionResult> Add(Product product)
         {
-            _productService.Add(product);
+            await _productService.AddAsync(product);
             return CreatedAtAction(nameof(Get), product);
         }
     }

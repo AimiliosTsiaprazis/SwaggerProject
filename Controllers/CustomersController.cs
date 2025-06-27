@@ -18,9 +18,9 @@ namespace SwaggerProject.Controllers
             return _customerService.GetCustomers();
         }
         [HttpPost]
-        public IActionResult Add(Customer customer)
+        public async Task <IActionResult> Add(Customer customer)
         {
-            _customerService.Add(customer);
+            await _customerService.AddAsync(customer);
             return CreatedAtAction(nameof(Get), customer);
         }
     }

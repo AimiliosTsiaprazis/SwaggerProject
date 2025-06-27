@@ -12,16 +12,18 @@ namespace SwaggerProject.Controllers
         {
             _orderService = orderService;
         }
+
         [HttpGet]
         public ActionResult<List<Order>> Get()
         {
             return _orderService.GetOrders();
         }
+
         [HttpPost]
-        public IActionResult Add(Order order)
+        public async Task<IActionResult> Add(Order order)
         {
-            _orderService.Add(order);
-            return CreatedAtAction(nameof(Get), order);
+            await _orderService.AddAsync(order);
+            return CreatedAtAction(nameof(Get), new { id = order.Id }, order);
         }
     }
 }
