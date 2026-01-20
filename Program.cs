@@ -20,8 +20,8 @@ builder.Services.AddSwaggerGen(swagger =>
 });
 builder.Services.AddHangfire(config => config.UseMemoryStorage());
 builder.Services.AddHangfireServer();
-var supabaseUrl = "https://vgmjsqgxhyiytgiasytq.supabase.co";
-var supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZnbWpzcWd4aHlpeXRnaWFzeXRxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTA5MzA2MzksImV4cCI6MjA2NjUwNjYzOX0.qJ4M064Cnx3OJ65sY8Ut946r6d3lNp6MjWkfiumuqSI";
+var supabaseUrl = "";
+var supabaseKey = "";
 
 builder.Services.AddSingleton(svc => new SupabaseService.SupabaseService(supabaseUrl, supabaseKey));
 var app = builder.Build();
