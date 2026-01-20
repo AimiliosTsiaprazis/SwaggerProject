@@ -12,8 +12,8 @@ public class ProcessingJob
     public async Task DeveloperVerification()
     {
         string name = "Aimilios Tsiaprazis";
-        int age = 22;
-        string email = "a.tsiaprazis@digital-worx.de";
+        int age = 23;
+        string email = "a...t...@gmail.com";
         string job = "Software Developer";
         System.Console.WriteLine(name);
         System.Console.WriteLine(age);
