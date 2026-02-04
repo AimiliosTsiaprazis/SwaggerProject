@@ -20,8 +20,8 @@ builder.Services.AddSwaggerGen(swagger =>
 });
 builder.Services.AddHangfire(config => config.UseMemoryStorage());
 builder.Services.AddHangfireServer();
-var supabaseUrl = "";
-var supabaseKey = "";
+var supabaseUrl = Environment.GetEnvironmentVariable("SUPABASE_URL_SWAGGER_PROJECT");
+var supabaseKey = Environment.GetEnvironmentVariable("SUPABASE_KEY_SWAGGER_PROJECT");
 
 builder.Services.AddSingleton(svc => new SupabaseService.SupabaseService(supabaseUrl, supabaseKey));
 var app = builder.Build();
