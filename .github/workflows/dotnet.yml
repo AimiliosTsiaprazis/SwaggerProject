@@ -1,0 +1,45 @@
+name: .NET Build & Deploy
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Repository auschecken
+      - uses: actions/checkout@v3
+
+      # .NET SDK installieren
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '9.0.x'
+
+      # Abhängigkeiten wiederherstellen
+      - name: Restore dependencies
+        run: dotnet restore
+
+      # Umgebungsvariablen aus GitHub Secrets setzen
+      - name: Set environment variables
+        run: |
+          echo "SUPABASE_URL=${{ secrets.SUPABASE_URL_SWAGGER_PROJECT }}" >> $GITHUB_ENV
+          echo "SUPABASE_KEY=${{ secrets.SUPABASE_KEY_SWAGGER_PROJECT }}" >> $GITHUB_ENV
+
+      # Projekt bauen
+      - name: Build
+        run: dotnet build --configuration Release
+
+      # Tests ausführen (falls du welche hast)
+      - name: Test
+        run: dotnet test --no-build --configuration Release
+
+      # Optional: Projekt starten oder deployen
+      # - name: Run
+      #   run: dotnet run --project SwaggerProject/SwaggerProject.csproj
