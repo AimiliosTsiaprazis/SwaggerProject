@@ -29,3 +29,11 @@ Each domain is handled through its own controller and service logic.
 3. Open Swagger UI in the browser
 4. Test endpoints using GET and POST methods
 5. Monitor background jobs via Hangfire Dashboard
+
+### Screenshots
+
+
+<img width="1835" height="1205" alt="Swagger1" src="https://github.com/user-attachments/assets/df979106-3fac-42f9-a476-a3324356ac62" />
+
+
+<img width="1826" height="705" alt="Swagger2" src="https://github.com/user-attachments/assets/00bb1a3b-9f9b-4c54-800a-4b33532964a0" />
