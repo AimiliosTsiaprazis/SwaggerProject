@@ -31,9 +31,8 @@ Each domain is handled through its own controller and service logic.
 5. Monitor background jobs via Hangfire Dashboard
 
 ### Project Versions
--dotnet version: 10.0.102
-
--target framework: net9.0
+- dotnet version: 10.0.102
+- target framework: net9.0
 
 - Key NuGet packages:
   - Hangfire 1.8.20
