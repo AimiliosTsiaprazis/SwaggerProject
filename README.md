@@ -30,6 +30,15 @@ Each domain is handled through its own controller and service logic.
 4. Test endpoints using GET and POST methods
 5. Monitor background jobs via Hangfire Dashboard
 
+### Project Versions
+-dotnet version: 10.0.102
+-target framework: net9.0
+- Key NuGet packages:
+  - Hangfire 1.8.20
+  - Microsoft.AspNetCore.Mvc.NewtonsoftJson 9.0.6
+  - Supabase 1.1.1
+  - Swashbuckle.AspNetCore 8.1.4
+
 ### Screenshots
 
 
